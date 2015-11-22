@@ -22,12 +22,17 @@
         android:textColor="#FFFFFF" />
 
     <ImageView
+        android:id="@+id/imageAnim"
+        android:src="@drawable/microsplashanim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageAnim"
-        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/microsplashanim2" />
+        android:layout_centerVertical="true"/>
+        <!--android:paddingBottom="49dp"
+        android:paddingRight="59dp"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"-->
 
     <ImageView
         android:layout_width="wrap_content"

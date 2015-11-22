@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.RelativeLayout;
 import android.widget.ImageView;
 
 /**
@@ -16,12 +17,25 @@ public class Splash extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
 
+        //RelativeLayout adamsLayout = new RelativeLayout(this);
+
+        //RelativeLayout.LayoutParams imgAnimateDetails = new RelativeLayout.LayoutParams(
+
+               // 80,80
+        //);
+
+        //imgAnimateDetails.leftMargin = 200;
+        //imgAnimateDetails.topMargin = 400;
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
 
         final ImageView iv = (ImageView) findViewById (R.id.imageAnim);
+        final ImageView iv2 = (ImageView) findViewById (R.id.imageView);
         final Animation an = AnimationUtils.loadAnimation(getBaseContext(),R.anim.rotate);
         final Animation an2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.abc_fade_out);
+
+        //adamsLayout.addView(iv, imgAnimateDetails);
 
         iv.startAnimation(an);
         an.setAnimationListener(new Animation.AnimationListener() {
@@ -33,6 +47,7 @@ public class Splash extends Activity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
+                iv2.startAnimation(an2);
                 iv.startAnimation(an2);
                 finish();
                 Intent i = new Intent(getBaseContext(),MainActivity.class);
