@@ -17,14 +17,6 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="20dp"/>
 
-    <View
-        android:id="@+id/anchor2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="130dp"
-        />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,9 +66,17 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView2"
         android:src="@drawable/screentitle"
-        android:layout_alignRight="@+id/anchor2"
         android:layout_marginTop="10dp"
         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageSquare"
+        android:src="@drawable/square"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
 
 
 </RelativeLayout>

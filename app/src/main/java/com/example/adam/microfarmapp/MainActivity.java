@@ -12,6 +12,9 @@ import android.view.MenuItem;
 import android.util.Log;
 import android.content.Intent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ImageView myImageView = (ImageView) findViewById(R.id.imageSquare);
+        Animation myFadeInAnimation = AnimationUtils.loadAnimation(getBaseContext(), R.anim.tween);
+        myImageView.startAnimation(myFadeInAnimation);
 
 
         Log.i(TAG, "onCreate");
