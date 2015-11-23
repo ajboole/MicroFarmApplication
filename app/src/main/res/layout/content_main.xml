@@ -17,6 +17,14 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="20dp"/>
 
+    <View
+        android:id="@+id/anchor2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="130dp"
+        />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,6 +68,15 @@
         android:onClick="onClickHumidity"
         android:layout_below="@+id/waterbutton"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/screentitle"
+        android:layout_alignRight="@+id/anchor2"
+        android:layout_marginTop="10dp"
+        />
 
 
 </RelativeLayout>
