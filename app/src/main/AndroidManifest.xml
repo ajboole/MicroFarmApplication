@@ -30,6 +30,21 @@
             android:label="@string/title_activity_light_screen"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity
+            android:name=".TempScreen"
+            android:label="@string/title_activity_temp_screen"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".WaterScreen"
+            android:label="@string/title_activity_water_screen"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".HumidityScreen"
+            android:label="@string/title_activity_humidity_screen"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>

@@ -32,6 +32,27 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void onClickTemp(View view){
+
+        Intent i = new Intent(this, TempScreen.class);
+        startActivity(i);
+
+    }
+
+    public void onClickWater(View view){
+
+        Intent i = new Intent(this, WaterScreen.class);
+        startActivity(i);
+
+    }
+
+    public void onClickHumidity(View view){
+
+        Intent i = new Intent(this, HumidityScreen.class);
+        startActivity(i);
+
+    }
+
     @Override
     protected void onStart() {
         super.onStart();
