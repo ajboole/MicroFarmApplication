@@ -5,6 +5,8 @@ import android.app.Fragment;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.transition.Fade;
+import android.transition.TransitionManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,7 +25,7 @@ public class InterfaceFragment extends Fragment {
         final Button historybutton = (Button) view.findViewById(R.id.historybutton);
         final Button settingsbutton = (Button) view.findViewById(R.id.settingsbutton);
 
-        //listens for home button to be clicked then calls button clicked method
+        //listens for stats button to be clicked then calls button clicked method
         statsbutton.setOnClickListener(
                 new View.OnClickListener(){
                     public void onClick(View v){
@@ -57,12 +59,21 @@ public class InterfaceFragment extends Fragment {
         return view;
     }
 
-    //method which changes the active view to the main activity
+    //method which changes the active view to the stats screen
     @TargetApi(Build.VERSION_CODES.M)
     public void statsButtonClicked(View view){
 
         Intent i = new Intent(getContext(), Statistics.class);
+
+        Fade fade = new Fade();
+        fade.setDuration(5000);
+        TransitionManager.beginDelayedTransition((ViewGroup) getView(), fade);
+
         startActivity(i);
+
+
+
+        //overridePendingTransition(R.transition.animation1, R.transition.animation2);
 
     }
 
