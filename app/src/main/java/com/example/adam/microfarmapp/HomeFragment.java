@@ -12,6 +12,8 @@ import android.widget.Button;
 
 /**
  * Created by Adam on 11/24/2015.
+ * This Class is created for the Home Button Fragment
+ * This will go on every Screen in the Interface to provide a way to get back to home.
  */
 public class HomeFragment extends Fragment {
 
@@ -23,6 +25,7 @@ public class HomeFragment extends Fragment {
 
         final Button button = (Button) view.findViewById(R.id.homebutton1);
 
+        //listens for home button to be clicked then calls button clicked method
         button.setOnClickListener(
                 new View.OnClickListener(){
                     public void onClick(View v){
@@ -35,6 +38,7 @@ public class HomeFragment extends Fragment {
         return view;
     }
 
+    //method which changes the active view to the main activity
     public void buttonClicked(View view){
 
         Intent i = new Intent(getContext(), MainActivity.class);

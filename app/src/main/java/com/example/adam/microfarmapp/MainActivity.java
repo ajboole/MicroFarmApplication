@@ -13,6 +13,16 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+/**
+ *
+ * Main Activity also known as the Home Screen where we can access all
+ * the elements (light, temp, water, humidity, stats, history, settings)
+ *
+ * uses tween.xml from anim
+ * and a bunch of xml files in the layout
+ *
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "mymessage";
@@ -23,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //tiny animated square code
         ImageView myImageView = (ImageView) findViewById(R.id.imageSquare);
         Animation myFadeInAnimation = AnimationUtils.loadAnimation(getBaseContext(), R.anim.tween);
         myImageView.startAnimation(myFadeInAnimation);
@@ -31,13 +42,7 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, "onCreate");
     }
 
-    public void onClickHome(View view){
-
-        Intent i = new Intent(this, MainActivity.class);
-        startActivity(i);
-
-    }
-
+    //Method to go to LightScreen when Light button is pressed
     public void onClickLight(View view){
 
         Intent i = new Intent(this, LightScreen.class);
@@ -45,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //method to go to TempScreen when temp button is pressed
     public void onClickTemp(View view){
 
         Intent i = new Intent(this, TempScreen.class);
@@ -52,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //method to go to WaterScreen when water button is pressed
     public void onClickWater(View view){
 
         Intent i = new Intent(this, WaterScreen.class);
@@ -59,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //method to go to HumidityScreen when humidity button is pressed
     public void onClickHumidity(View view){
 
         Intent i = new Intent(this, HumidityScreen.class);
