@@ -9,18 +9,6 @@
     android:background="#162028"
     >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/hello_world"
-        android:id="@+id/textView"
-        android:textSize="45dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="32dp"
-        android:textColor="#FFFFFF" />
-
     <ImageView
         android:id="@+id/imageAnim"
         android:src="@drawable/microsplashanim"

@@ -18,7 +18,9 @@
                 <category android:name="android.intent.category.default" />
             </intent-filter>
         </activity>
-        <activity android:name=".Splash" android:theme="@style/AppTheme.NoActionBar" >
+        <activity
+            android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,6 +46,18 @@
             android:name=".HumidityScreen"
             android:label="@string/title_activity_humidity_screen"
             android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Statistics"
+            android:label="@string/title_activity_statistics" >
+        </activity>
+        <activity
+            android:name=".History"
+            android:label="@string/title_activity_history" >
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings" >
         </activity>
     </application>
 

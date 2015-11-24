@@ -92,5 +92,15 @@
         android:layout_alignParentLeft="true"
         />
 
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.example.adam.microfarmapp.InterfaceFragment"
+        android:id="@+id/fragment"
+        tools:layout="@layout/interface_fragment"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
 
 </RelativeLayout>
