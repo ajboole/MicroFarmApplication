@@ -61,12 +61,15 @@
         android:layout_below="@+id/waterbutton"
         android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView2"
-        android:src="@drawable/screentitle"
-        android:layout_marginTop="10dp"
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:id="@+id/homebutton"
+        android:background="@drawable/home_button"
+        android:onClick="onClickHome"
+        android:layout_alignTop="@+id/imageSquare"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         />
 
     <ImageView
@@ -75,8 +78,20 @@
         android:id="@+id/imageSquare"
         android:src="@drawable/square"
         android:layout_marginTop="10dp"
-        android:layout_toRightOf="@+id/imageView2"
-        android:layout_toEndOf="@+id/imageView2" />
+        android:layout_toRightOf="@+id/homebutton"
+        android:layout_toEndOf="@+id/homebutton" />
+
+    <com.example.adam.microfarmapp.FontBrownRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BROWN FONT TEST"
+        android:id="@+id/brownfonttest"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
 
 
 </RelativeLayout>
