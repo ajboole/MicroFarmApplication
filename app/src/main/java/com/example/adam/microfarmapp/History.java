@@ -17,8 +17,6 @@ public class History extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
 
-        /**
-
         Button button = (Button) findViewById(R.id.homebuttonhist);
 
         button.setOnClickListener(
@@ -36,8 +34,6 @@ public class History extends AppCompatActivity {
         ImageView myImageView = (ImageView) findViewById(R.id.imageSquareHist);
         Animation myFadeInAnimation = AnimationUtils.loadAnimation(getBaseContext(), R.anim.tween);
         myImageView.startAnimation(myFadeInAnimation);
-
-         **/
 
     }
 
