@@ -18,8 +18,8 @@
         android:layout_marginTop="20dp"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:text=""
         android:id="@+id/lightbutton"
         android:background="@drawable/light_button"
@@ -29,8 +29,8 @@
          />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:text=""
         android:id="@+id/tempbutton"
         android:background="@drawable/temp_button"
@@ -40,8 +40,8 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:text=""
         android:id="@+id/waterbutton"
         android:background="@drawable/water_button"
@@ -52,8 +52,8 @@
          />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:text=""
         android:id="@+id/humiditybutton"
         android:background="@drawable/humidity_button"

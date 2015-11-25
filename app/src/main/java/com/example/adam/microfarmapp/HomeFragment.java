@@ -1,6 +1,8 @@
 package com.example.adam.microfarmapp;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -39,6 +41,7 @@ public class HomeFragment extends Fragment {
     }
 
     //method which changes the active view to the main activity
+    @TargetApi(Build.VERSION_CODES.M)
     public void buttonClicked(View view){
 
         Intent i = new Intent(getContext(), MainActivity.class);
